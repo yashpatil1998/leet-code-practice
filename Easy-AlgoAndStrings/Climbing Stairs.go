@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/climbing-stairs/
 
+package EasyAlgoAndStrings
+
 func climbStairs(n int) int {
     return fibonacci(n)
 }

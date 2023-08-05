@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/add-two-numbers
 
+package MediumDS
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -7,7 +9,14 @@
  *     Next *ListNode
  * }
  */
- func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+
+type ListNode struct {
+    Val int
+    Next *ListNode
+}
+
+
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
     str1, str2 := []int{}, []int{}
     for l1 != nil {
         str1 = append((str1), int(l1.Val))
@@ -25,9 +34,6 @@
     str1 = revSlice(str1)
     str2 = revSlice(str2)
     
-    if len(str1) != len(str2) {
-        panic(fmt.Sprintf("len not equal ! %d %d", len(str1), len(str2)))
-    }
     carry := 0
     var result []int
     for i := len(str1) - 1; i > -1; i-- {

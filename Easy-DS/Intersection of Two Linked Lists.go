@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/intersection-of-two-linked-lists/
 
+package EasyDS
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -7,6 +9,12 @@
  *     Next *ListNode
  * }
  */
+
+type ListNode struct {
+    Val int
+    Next *ListNode
+}
+
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
     if headA == nil || headB == nil { 
         return nil 

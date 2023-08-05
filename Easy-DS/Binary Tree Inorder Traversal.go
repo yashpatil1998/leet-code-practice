@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/binary-tree-inorder-traversal/
 
+package EasyDS
+
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -8,7 +10,14 @@
  *     Right *TreeNode
  * }
  */
- func inorderTraversal(root *TreeNode) []int {
+
+type TreeNode struct {
+    Val int
+    Left *TreeNode
+    Right *TreeNode
+}
+
+func inorderTraversal(root *TreeNode) []int {
     sol := []int{}
     if root == nil {
         return sol
