@@ -20,6 +20,7 @@ type TreeNode struct {
 // <K,V> = <k, allPossibleFBT(k)>
 var mem = map[int][]*TreeNode{}
 
+// n is number of nodes, return the array of root nodes which are full binary trees
 func allPossibleFBT(n int) []*TreeNode {
 	if n%2 == 0 {
 		return nil
