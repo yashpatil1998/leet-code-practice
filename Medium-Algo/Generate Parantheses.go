@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/generate-parentheses/
+
 package MediumAlgo
 
 func generateParenthesis(n int) []string {
